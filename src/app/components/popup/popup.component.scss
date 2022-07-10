@@ -1,0 +1,22 @@
+.header {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-item {
+  width: 100%;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.submit-button {
+  border: none;
+  background-color: green;
+  color: white;
+  float: right;
+  padding: 1rem;
+}
+
+.submit-button:disabled {
+  background-color: grey;
+}

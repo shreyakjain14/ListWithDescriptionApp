@@ -1,0 +1,15 @@
+<div class="header">
+  {{ data.isAdd ? "Add" : "Edit" }}
+  {{ data.isList ? "list" : "details" }}
+</div>
+
+<form (submit)="submitForm()" [formGroup]="form">
+  <label for="key">Enter {{ data.isList ? "name" : "detail" }}:</label>
+  <input class="form-item" type="text" formControlName="key" />
+
+  <button [disabled]="form.invalid" class="submit-button" type="submit">
+    Done
+  </button>
+</form>
+<!-- </div>
+<div class="popup-container"> -->
